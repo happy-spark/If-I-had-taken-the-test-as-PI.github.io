@@ -8,3 +8,15 @@
     font-size: calc(3.14px + 1.592px + 6.535px + 8.979px);
     margin-top: 3.14%;
 }
+
+.choice-box {
+    display: flex;
+    user-select: none;
+}
+
+.choice-number {
+    font-size: 31.4px;
+    color: black;
+    cursor: pointer;
+    margin-left: 31.4px;
+}
