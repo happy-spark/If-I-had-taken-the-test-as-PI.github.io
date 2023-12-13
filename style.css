@@ -1,0 +1,10 @@
+#h1-title {
+    margin: auto;
+    font-size: 31.4px;
+}
+
+#h2-subtitle {
+    margin: auto;
+    font-size: calc(3.14px + 1.592px + 6.535px + 8.979px);
+    margin-top: 3.14%;
+}
