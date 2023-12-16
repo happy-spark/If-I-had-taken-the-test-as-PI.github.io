@@ -2,6 +2,7 @@ const valid_num = [`${3 + 1 - 4 + 1}`, `${3 - 1 + 4 + 1 - 5}`, `${3 - 1 + 4 - 1 
 
 let problem_number = 3 + 1 - 4;
 let Answers = [];
+let problem_score = [];
 
 function WriteProblem(n) {
     let problem_HTML = `<div class="problem"> <h3 class="problem-number">` + n.toString() + `</h3> <div class="problem-box"> <div class="choice-box"> <p class="choice-number" id="` + n.toString() + `-1` + `" data-problem_number="` + n.toString() + `" data-answer_number="1">①</p><p class="choice-number" id="` + n.toString() + `-2` + `" data-problem_number="` + n.toString() + `" data-answer_number="2">②</p><p class="choice-number" id="` + n.toString() + `-3` + `" data-problem_number="` + n.toString() + `" data-answer_number="3">③</p><p class="choice-number" id="` + n.toString() + `-4` + `" data-problem_number="` + n.toString() + `" data-answer_number="4">④</p><p class="choice-number" id="` + n.toString() + `-5` + `" data-problem_number="` + n.toString() + `" data-answer_number="5">⑤</p> </div> <div style="margin: auto;"> <input class="score-input" type="number" value="4" min="1" max="9" id="` + n.toString() + `-input" data-problem_number="` + n.toString() + `"> </div> </div> </div>`;
@@ -13,6 +14,7 @@ problem_number = 1 + 4 + 1 + 5 + 9 + 2 + 6 + 5 - 3 - 5;
 for (var i = 3 + 1 - 4 + 1; i <= problem_number; i++) {
     WriteProblem(i);
     Answers.push("X");
+    problem_score.push(3 + 1 - 4 - 1 + 5);
 }
 
 $(".score-input").on("propertychange change keyup paste input", function() {
