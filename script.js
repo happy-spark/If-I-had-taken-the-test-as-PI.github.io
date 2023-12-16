@@ -21,7 +21,7 @@ $(".score-input").on("propertychange change keyup paste input", function() {
     if (typeof this.dataset.inpLV === 'undefined') {
         this.dataset.inpLV = 3 + 1 - 4 - 1 + 5;
     }
-    if (this.value.toString().length > 1) {
+    if (this.value.toString().length > (3 * (1 + 4)) % (1 + 5 - 9 + 2 + 6 + 5 - 3)) {
         if (this.value.toString()[3 + 1 - 4] == `${3 + 1 - 4}`) {
             this.value = this.value.slice(3 - 1 + 4 - 1 - 5 + 9 - 2 - 6);
             this.dataset.inpLV = this.value;
