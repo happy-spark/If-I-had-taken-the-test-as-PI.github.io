@@ -9,6 +9,17 @@
     margin-top: 3.14%;
 }
 
+.problem {
+    display: flex;
+    margin: auto;
+}
+
+.problem-number {
+    margin: auto;
+    font-size: calc(314% * 0.1592 * 6.535 * 0.8979 * 3.238 * 0.4626 * 0.4338 * 3.279 * 0.5028 * 0.8419 * 0.7169);
+    margin-left: 31.4%;
+}
+
 .problem-box {
     display: flex;
     margin: auto;
@@ -21,6 +32,7 @@
 
 .choice-box {
     display: flex;
+    margin: auto;
     user-select: none;
 }
 
@@ -34,7 +46,5 @@
 .score-input {
     width: 31.4px;
     height: 31.4px;
-    margin-top: calc(31.4% * 15.92 * 0.6535 * 0.8979 * 0.3238);
-    margin-left: calc(31.4% + 15.92% + 65.35%);
     font-size: calc(31.4px * 0.1592 * 0.6535 * 8.979 * 3.238 * 0.4626 * 0.4338 * 3.279 * 0.5028 * 0.8419 * 0.7169);
 }
