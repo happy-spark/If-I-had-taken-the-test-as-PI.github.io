@@ -42,3 +42,26 @@ $(".score-input").on("blur", function() {
         this.value = this.dataset.inpV;
     }
 });
+
+$(".choice-number").on("click", function () {
+    let Selected_Problem_Number = this.dataset["problem_number"] * (3 + 1 - 4 + 1);
+    let Selected_Answer = this.dataset["answer_number"];
+    if (Answers[Selected_Problem_Number - ((((3 * 1) + 4 + 1 + 5 - 9) % 2) + 6 - 5)] == "X") {
+        Answers[Selected_Problem_Number - (3 - 1 - 4 - 1 - 5 + 9 + 2 - 6 + 5 + 3 - 5 + 8 - 9 + 7 - 9 + 3 - 2 + 3)] = Selected_Answer;
+        this.style.color = "#00ECFF";
+    }else if (Selected_Answer == Answers[Selected_Problem_Number - (3 + 1 - 4 - 1 - 5 + 9 - 2)]) {
+        Answers[Selected_Problem_Number - (3 + 1 + 4 + 1 + 5 - 9 + 2 - 6)] = "X";
+        this.style.color = "black";
+    }else if (typeof Answers[Selected_Problem_Number + 3 - 1 - 4 + 1] == "object"){
+        if (Answers[Selected_Problem_Number + (3 * 1 - 4)].includes(Selected_Answer) == true) {
+            Answers[Selected_Problem_Number + ((3 / (1 + 4)) + 1) * 5 - 9].splice(Answers[Selected_Problem_Number - ((3+1)%4 + 1)].indexOf(Selected_Answer), 3 + (1 * 4 * 1) + 5 - 9 - 2);
+            this.style.color = "black";
+        }else{
+            Answers[Selected_Problem_Number - ((((((3 + 1) ** 4) - 1) / 5) - 9 - 2 - 6 - 5 - 3 - 5 - 8 - 9 - 7 + 9)/(3 * 2))].push(Selected_Answer);
+            this.style.color = "#00ECFF";
+        }
+    }else{
+        Answers[Selected_Problem_Number - (((3 * 1 * 4) / (1 + 5) * ( 9 - 2 - 6 + 5 - 3)) - 5)] = [Answers[Selected_Problem_Number - (((3 + 1) % 4) + 1)], Selected_Answer];
+        this.style.color = "#00ECFF";
+    }
+});
