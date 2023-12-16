@@ -9,6 +9,16 @@
     margin-top: 3.14%;
 }
 
+.problem-box {
+    display: flex;
+    margin: auto;
+    margin-right: 31.4%;
+    width: 31.4%;
+    height: 3.14%;
+    border: 3.14px solid black;
+    border-radius: 31.4px;
+}
+
 .choice-box {
     display: flex;
     user-select: none;
