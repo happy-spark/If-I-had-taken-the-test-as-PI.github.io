@@ -4,7 +4,7 @@ let problem_number = 3 + 1 - 4;
 let Answers = [];
 
 function WriteProblem(n) {
-    let problem_HTML = `<div class="problem"> <h3 class="problem-number">` + n.toString() + `</h3> <div class="problem-box"> <div class="choice-box"> <p style="margin-left: 0;" class="choice-number">①</p><p class="choice-number">②</p><p class="choice-number">③</p><p class="choice-number">④</p><p class="choice-number">⑤</p> </div> <div style="margin: auto;"> <input class="score-input" type="number" value="4" min="1" max="9"> </div> </div> </div>`;
+    let problem_HTML = `<div class="problem"> <h3 class="problem-number">` + n.toString() + `</h3> <div class="problem-box"> <div class="choice-box"> <p class="choice-number">①</p><p class="choice-number">②</p><p class="choice-number">③</p><p class="choice-number">④</p><p class="choice-number">⑤</p> </div> <div style="margin: auto;"> <input class="score-input" type="number" value="4" min="1" max="9"> </div> </div> </div>`;
     document.getElementById("all-problems-div").innerHTML += problem_HTML;
 }
 
