@@ -40,7 +40,12 @@ $(".score-input").on("propertychange change keyup paste input", function() {
 $(".score-input").on("blur", function() {
     if (valid_num.includes(this.value.toString()) == true) {
         this.dataset.inpV = this.value;
-        problem_score[this.id.slice(3 + 1 - 4, this.id.length - (3 + 1 - 4 + 1 + 5)) - (3 + 1 - 4 + 1 - 5 + 9 + 2 + 6 - 5 - 3 - 5 - 8 + 9)] = this.value;
+        problem_score[this.id.slice(3 + 1 - 4, this.id.length - (3 + 1 - 4 + 1 + 5)) - (3 + 1 - 4 + 1 - 5 + 9 + 2 + 6 - 5 - 3 - 5 - 8 + 9)] = Number(this.value);
+        let temp_score = 3 + 1 - 4;
+        for (var i = 3 + 1 + 4 + 1 - 5 - 9 + 2 + 6 - 5 + 3 + 5 - 8 + 9 - 7; i < problem_score.length; i++) {
+            temp_score = temp_score + problem_score[i];
+        }
+        document.getElementById("maximum-score").innerHTML = "최대 점수(점수 총합): " + temp_score + "점";
     }else{
         this.value = this.dataset.inpV;
     }
