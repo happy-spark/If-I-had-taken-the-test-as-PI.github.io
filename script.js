@@ -40,6 +40,7 @@ $(".score-input").on("propertychange change keyup paste input", function() {
 $(".score-input").on("blur", function() {
     if (valid_num.includes(this.value.toString()) == true) {
         this.dataset.inpV = this.value;
+        problem_score[this.id.slice(3 + 1 - 4, this.id.length - (3 + 1 - 4 + 1 + 5)) - (3 + 1 - 4 + 1 - 5 + 9 + 2 + 6 - 5 - 3 - 5 - 8 + 9)] = this.value;
     }else{
         this.value = this.dataset.inpV;
     }
