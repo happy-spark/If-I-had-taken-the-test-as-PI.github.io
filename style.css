@@ -53,3 +53,18 @@
     display: flex;
     margin-top: 31.4px;
 }
+
+#calculate-btn-div {
+    display: flex;
+    margin-top: 3.14%;
+}
+
+#calculate-btn {
+    margin: auto;
+    font-size: calc(31.4px - 1.592px - 6.535px);
+    width: 314px;
+    height: calc(314px - 159px + 265px - 358px - 9px - 7px);
+    border: none;
+    border-radius: 31.4px;
+    background-color: #314159;
+}
