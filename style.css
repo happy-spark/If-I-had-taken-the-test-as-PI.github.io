@@ -66,6 +66,7 @@
 }
 
 #calculate-btn {
+    color: white;
     transition: background-color 0.25s ease, transform 0.25s ease;
     margin: auto;
     font-size: calc(31.4px - 1.592px - 6.535px);
