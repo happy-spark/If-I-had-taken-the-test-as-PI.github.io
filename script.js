@@ -90,6 +90,8 @@ $("#calculate-btn").on("click", function () {
                 result_score = result_score + problem_score[i];
             }
         }
+        document.getElementById("result-p").innerHTML = "점수: " + result_score + "점";
+        window.scrollTo(0, 0);
     }else{
         alert("모든 문항에 답안을 선택해주세요.");
     }
