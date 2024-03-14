@@ -62,16 +62,22 @@ $(".choice-number").on("click", function () {
     }else if (Selected_Answer == Answers[Selected_Problem_Number - (3 + 1 - 4 - 1 - 5 + 9 - 2)]) {
         Answers[Selected_Problem_Number - (3 + 1 + 4 + 1 + 5 - 9 + 2 - 6)] = "X";
         this.style.color = "black";
-    }else if (typeof Answers[Selected_Problem_Number + 3 - 1 - 4 + 1] == "object"){
-        if (Answers[Selected_Problem_Number + (3 * 1 - 4)].includes(Selected_Answer) == true) {
-            Answers[Selected_Problem_Number + ((3 / (1 + 4)) + 1) * 5 - 9].splice(Answers[Selected_Problem_Number - ((3+1)%4 + 1)].indexOf(Selected_Answer), 3 + (1 * 4 * 1) + 5 - 9 - 2);
-            this.style.color = "black";
-        }else{
-            Answers[Selected_Problem_Number - ((((((3 + 1) ** 4) - 1) / 5) - 9 - 2 - 6 - 5 - 3 - 5 - 8 - 9 - 7 + 9)/(3 * 2))].push(Selected_Answer);
-            this.style.color = "#00ECFF";
-        }
-    }else{
-        Answers[Selected_Problem_Number - (((3 * 1 * 4) / (1 + 5) * ( 9 - 2 - 6 + 5 - 3)) - 5)] = [Answers[Selected_Problem_Number - (((3 + 1) % 4) + 1)], Selected_Answer];
+    // }else if (typeof Answers[Selected_Problem_Number + 3 - 1 - 4 + 1] == "object"){
+    //     if (Answers[Selected_Problem_Number + (3 * 1 - 4)].includes(Selected_Answer) == true) {
+    //         Answers[Selected_Problem_Number + ((3 / (1 + 4)) + 1) * 5 - 9].splice(Answers[Selected_Problem_Number - ((3+1)%4 + 1)].indexOf(Selected_Answer), 3 + (1 * 4 * 1) + 5 - 9 - 2);
+    //         this.style.color = "black";
+    //     }else{
+    //         Answers[Selected_Problem_Number - ((((((3 + 1) ** 4) - 1) / 5) - 9 - 2 - 6 - 5 - 3 - 5 - 8 - 9 - 7 + 9)/(3 * 2))].push(Selected_Answer);
+    //         this.style.color = "#00ECFF";
+    //     }
+    }//else{
+    //     Answers[Selected_Problem_Number - (((3 * 1 * 4) / (1 + 5) * ( 9 - 2 - 6 + 5 - 3)) - 5)] = [Answers[Selected_Problem_Number - (((3 + 1) % 4) + 1)], Selected_Answer];
+    //     this.style.color = "#00ECFF";
+    // }
+    else {
+        let temp = document.getElementById(Selected_Problem_Number + "-" + Answers[Selected_Problem_Number - (3 + 1 - 4 - 1 - 5 + 9 - 2)]).style;
+        temp.color = "black";
+        Answers[Selected_Problem_Number - (3 + 1 - 4 - 1 - 5 + 9 - 2)] = Selected_Answer;
         this.style.color = "#00ECFF";
     }
 });
