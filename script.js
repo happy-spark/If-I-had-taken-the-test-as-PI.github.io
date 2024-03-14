@@ -90,5 +90,7 @@ $("#calculate-btn").on("click", function () {
                 result_score = result_score + problem_score[i];
             }
         }
+    }else{
+        alert("모든 문항에 답안을 선택해주세요.");
     }
 });
