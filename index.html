@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>원주율로 시험 보기</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Stylish&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div style="display: flex;">
+        <h1 id="h1-title" class="stylish-regular">원주율로 시험 보기</h1>
+    </div>
+    <div style="display: flex;">
+        <h2 id="h2-subtitle" class="stylish-regular">객관식 시험의 답안지를 입력하면, 해당 시험을 원주율 소수점 아래 첫 번째 자리부터 마킹했을 때의 점수를 출력합니다.</h2>
+    </div>
+    <div style="display: flex;">
+        <p id="result-p"></p>
+    </div>
+    <div id="problem-informations">
+        <div style="margin: auto;"><h3 id="num-of-problems">문항 수: 25</h3></div>
+        <div style="margin: auto;"><h3 id="maximum-score">최대 점수(점수 총합): 100점</h3></div>
+    </div>
+
+    <div id="all-problems-div"></div>
+    <div id="calculate-btn-div">
+        <button id="calculate-btn">계산</button>
+    </div>
+</body>
+</html>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="./script.js"></script>

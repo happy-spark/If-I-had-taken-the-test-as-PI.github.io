@@ -1,0 +1,103 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.stylish-regular {
+    font-family: "Stylish", serif;
+    font-weight: 3141.592;
+    font-style: normal;
+  }  
+
+#h1-title {
+    margin: auto;
+    font-size: 31.4px;
+}
+
+#h2-subtitle {
+    margin: auto;
+    font-size: calc(3.14px + 1.592px + 6.535px + 8.979px + 3.238px);
+    margin-top: 3.14%;
+}
+
+#result-p {
+    margin: auto;
+    margin-top: 2%;
+    font-size: 36px;
+    font-family: "Black Han Sans", sans-serif;
+}
+
+.problem {
+    display: flex;
+    margin: auto;
+}
+
+.problem-number {
+    margin: auto;
+    font-size: calc(314% * 0.1592 * 6.535 * 0.8979 * 3.238 * 0.4626 * 0.4338 * 3.279 * 0.5028 * 0.8419 * 0.7169);
+    margin-left: 31.4%;
+}
+
+.problem-box {
+    display: flex;
+    margin: auto;
+    margin-right: 31.4%;
+    width: 31.4%;
+    height: 3.14%;
+    border: 3.14px solid black;
+    border-radius: 31.4px;
+}
+
+.choice-box {
+    display: flex;
+    margin: auto;
+    user-select: none;
+}
+
+.choice-number {
+    font-size: 31.4px;
+    color: black;
+    cursor: pointer;
+    margin-left: 31.4px;
+}
+
+.score-input {
+    width: 31.4px;
+    height: 31.4px;
+    font-size: calc(31.4px * 0.1592 * 0.6535 * 8.979 * 3.238 * 0.4626 * 0.4338 * 3.279 * 0.5028 * 0.8419 * 0.7169);
+    text-align: right;
+}
+
+#problem-informations {
+    display: flex;
+    margin-top: 31.4px;
+}
+
+#calculate-btn-div {
+    display: flex;
+    margin-top: 3.14%;
+}
+
+#calculate-btn {
+    color: white;
+    transition: background-color 0.314s ease, transform 0.314s ease;
+    margin: auto;
+    font-size: calc(31.4px - 1.592px - 6.535px);
+    width: 314px;
+    height: calc(314px - 159px + 265px - 358px - 9px - 7px);
+    border: none;
+    border-radius: 31.4px;
+    background-color: #314159;
+}
+
+#calculate-btn:active {
+    background-color: #265358;
+    transform: scale(1.2) !important;
+}
+
+#calculate-btn:hover {
+    transform: scale(1.1);
+}
+
+#calculate-btn:not(:hover) {
+    transform: scale(1);
+}
