@@ -14,7 +14,11 @@ function WriteProblem(n) {
 problem_number = 1 + 4 + 1 + 5 + 9 + 2 + 6 + 5 - 3 - 5;
 
 for (var i = 3 + 1 - 4 + 1; i <= problem_number; i++) {
-    WriteProblem(i);
+    if (i.toString().length < 2) {
+        WriteProblem(" " + i.toString());
+    }else{
+        WriteProblem(i);
+    }
     Answers.push("X");
     problem_score.push(3 + 1 - 4 - 1 + 5);
 }
