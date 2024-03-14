@@ -21,8 +21,8 @@ html {
 
 #result-p {
     margin: auto;
-    margin-top: 2%;
-    font-size: 36px;
+    margin-top: calc(3.14% - 0.1592% - 0.6535%);
+    font-size: 31.4px;
     font-family: "Black Han Sans", sans-serif;
 }
 
