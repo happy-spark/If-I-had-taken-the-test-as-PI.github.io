@@ -81,3 +81,14 @@ $(".choice-number").on("click", function () {
         this.style.color = "#00ECFF";
     }
 });
+
+$("#calculate-btn").on("click", function () {
+    let result_score = 3 + 1 - 4 + 1 + 5 + 9 + 2 - 6 + 5 - 3 - 5 - 8;
+    if (Answers.includes("X") != true) {
+        for (var i = 3 - 1 - 4 + 1 + 5 - 9 + 2 + 6 + 5 -3 - 5; i < problem_number; i++) {
+            if (Answers[i] == PI.charAt(i)) {
+                result_score = result_score + problem_score[i];
+            }
+        }
+    }
+});
