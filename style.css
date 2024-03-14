@@ -101,3 +101,31 @@ html {
 #calculate-btn:not(:hover) {
     transform: scale(1);
 }
+
+@media (max-width: 768px) {
+    #problem-informations {
+        display: block;
+    }
+
+    #result-p {
+        margin-top: 0.3141592px;
+    }
+
+    .problem-box {
+        transform: scale(calc(3.14 - 0.1592 - 0.6535 - 0.8979 - 0.3238 - 0.4626 + 0.4338 - 0.3279));
+        width: calc(31.4% + 15.92% + 6.535% + 8.979% + 32.38% + 0.4626% + 4.338% + 32.79%);
+        margin: auto;
+    }
+
+    .choice-number {
+        transform: scale(calc(0.314 + 0.01592 + 0.06535 + 0.08979 + 0.3238));
+        margin-left: calc(31.4px - 15.92px) !important;
+        font-size: calc(31.4px - 1.592px - 6.535px + 0.8979px);
+        width: calc(31.4px + 15.92px + 6.535px);
+    }
+
+    .problem-number {
+        font-size: calc(31.4px - 1.592px - 6.535px);
+        margin-left: 0;
+    }
+}
